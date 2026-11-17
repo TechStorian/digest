@@ -1,0 +1,19 @@
+# Netlify deployment. The static frontend is served from public/ and the
+# news API runs as a function at /api/news. No build step is needed.
+[build]
+  publish = "public"
+  command = ""
+
+[functions]
+  directory = "netlify/functions"
+  # Bundle the shared CommonJS code in lib/ into the function.
+  node_bundler = "esbuild"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
