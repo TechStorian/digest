@@ -15,6 +15,7 @@ const els = {
   feed: $('#feed'),
   updated: $('#updated'),
   credits: $('#credits'),
+  year: $('#year'),
 };
 
 /* ---------- Storage (fails quietly in private windows) ---------- */
@@ -583,6 +584,8 @@ els.today.textContent = new Date().toLocaleDateString('en-GB', {
   month: 'long',
   year: 'numeric',
 });
+
+els.year.textContent = new Date().getFullYear();
 
 render();
 load();

@@ -1,6 +1,6 @@
-# Daily Digest
+# Techstorian Digest
 
-A calm, modern news dashboard that brings tech and science news together in one responsive grid:
+A calm news dashboard from techstorian that brings tech and science news together in one responsive grid:
 
 - [TLDR](https://tldr.tech) newsletters, in English. Each daily issue is split into its individual stories, with summaries, read times and sections. Sponsored blocks are skipped.
 - [Videnskab.dk](https://videnskab.dk), Danish popular science, with images and categories.
